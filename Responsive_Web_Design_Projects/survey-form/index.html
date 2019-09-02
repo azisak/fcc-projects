@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know how we can improve our system</p>
+      <form action="/" id="survey-form">
+        <div class="row">
+          <div class="row-label">
+            <label for="name" id="name-label">Name:</label>
+          </div>
+          <div class="row-input">
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-label">
+            <label for="email" id="email-label">Email:</label>
+          </div>
+          <div class="row-input">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-label">
+            <label for="number" id="number-label">Age:</label>
+          </div>
+          <div class="row-input">
+            <input
+              type="number"
+              id="number"
+              placeholder="Enter your age"
+              min="17"
+              max="50"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-label">
+            <label for="dropdown" id="dropdown-label">Occupation:</label>
+          </div>
+          <div class="row-input">
+            <select name="occupation" id="dropdown">
+              <option value="student">Student</option>
+              <option value="full time job">Full time job</option>
+              <option value="prefer not say">Prefer not say</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-label">
+            <label for="gender" id="radio-button-label">Gender:</label>
+          </div>
+          <div class="row-input">
+            <div class="row-input-option"><input name="gender" type="radio" value="male" />Male</div>
+            <div class="row-input-option"><input name="gender" type="radio" value="female" />Female</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-label">
+            <label for="language" id="checkbox-label">Languages:</label>
+          </div>
+          <div class="row-input">
+            <div class="row-input-option">
+              <input type="checkbox" name="language" value="english" />English
+            </div>
+            <div class="row-input-option">
+              <input type="checkbox" name="language" value="chinese" />Chinese
+            </div>
+            <div class="row-input-option">
+              <input type="checkbox" name="language" value="bahasa" />Bahasa
+            </div>
+            <div class="row-input-option">
+              <input type="checkbox" name="language" value="french" />French
+            </div>
+            <div class="row-input-option">
+              <input type="checkbox" name="language" value="spanish" />Spanish
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-label">
+            <label for="comments" id="comments-label">Comments:</label>
+          </div>
+          <div class="row-input">
+            <textarea name="comments" ></textarea>
+          </div>
+        </div>
+
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

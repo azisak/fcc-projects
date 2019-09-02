@@ -1,0 +1,69 @@
+body {
+  background: gray;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+#main {
+  padding: 10px;
+  background: lightgray;
+  width: 65vw;
+  margin: 0;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.row > * {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.row-label {
+  text-align: right;
+}
+
+.row-input {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.row-input-option {
+  display: flex;
+  align-items: center;
+}
+
+.row-input-option > input {
+  margin: 5px 10px 5px 0;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  padding: 0px;
+  margin: 0 10px 0 0;
+  width: 100%;
+  max-width: 200px;
+  height: 25px;
+  background: whitesmoke;
+}
+
+textarea {
+  height: 100px;
+}
+
+#submit {
+  margin-top: 10px;
+  background: white;
+  border-radius: 10%;
+  width: 80px;
+  height: 30px;
+}
